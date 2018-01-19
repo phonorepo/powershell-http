@@ -28,7 +28,7 @@ if (Get-Command "Get-NetIPAddress" -errorAction SilentlyContinue)
 
 $currentpath = split-path -parent $MyInvocation.MyCommand.Definition;
 $www_root = $currentpath + "\www";
-$httpSourceFilePath = $currentpath + "\http2.cs";
+$httpSourceFilePath = $currentpath + "\http_powershellv2.cs";
 
 $source = Get-Content -Path $httpSourceFilePath;
 
